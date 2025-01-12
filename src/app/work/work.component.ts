@@ -5,7 +5,8 @@ import { FormDataService }     from '../data/formData.service';
 
 @Component ({
     selector:     'mt-wizard-work'
-    ,templateUrl: './work.component.html'
+    ,templateUrl: './work.component.html',
+    standalone: false
 })
 
 export class WorkComponent implements OnInit {

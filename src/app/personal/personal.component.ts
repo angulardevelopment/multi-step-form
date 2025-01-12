@@ -6,7 +6,8 @@ import { FormDataService }     from '../data/formData.service';
 
 @Component ({
     selector:     'mt-wizard-personal'
-    ,templateUrl: './personal.component.html'
+    ,templateUrl: './personal.component.html',
+    standalone: false
 })
 
 export class PersonalComponent implements OnInit {

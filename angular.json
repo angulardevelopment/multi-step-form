@@ -25,8 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -39,7 +38,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -58,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-multi-step:build"
+            "buildTarget": "angular-multi-step:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-multi-step:build:production"
+              "buildTarget": "angular-multi-step:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-multi-step:build"
+            "buildTarget": "angular-multi-step:build"
           }
         },
         "test": {
@@ -132,5 +130,7 @@
       }
     }
   },
-  "defaultProject": "angular-multi-step"
+  "cli": {
+    "analytics": "c1aac4d1-56be-435d-a0c5-a149373e1e34"
+  }
 }

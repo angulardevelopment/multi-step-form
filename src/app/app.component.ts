@@ -4,7 +4,8 @@ import { FormDataService }            from './data/formData.service';
 
 @Component ({
     selector:     'multi-step-wizard-app'
-    ,templateUrl: './app.component.html'
+    ,templateUrl: './app.component.html',
+    standalone: false
 })
 
 export class AppComponent implements OnInit {

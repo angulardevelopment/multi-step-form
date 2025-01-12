@@ -5,7 +5,8 @@ import { FormDataService }            from '../data/formData.service';
 
 @Component ({
     selector:     'mt-wizard-result'
-    ,templateUrl: './result.component.html'
+    ,templateUrl: './result.component.html',
+    standalone: false
 })
 
 export class ResultComponent implements OnInit {

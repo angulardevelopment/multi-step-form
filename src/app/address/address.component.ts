@@ -6,7 +6,8 @@ import { FormDataService }     from '../data/formData.service';
 
 @Component ({
     selector:     'mt-wizard-address'
-    ,templateUrl: './address.component.html'
+    ,templateUrl: './address.component.html',
+    standalone: false
 })
 
 export class AddressComponent implements OnInit {
