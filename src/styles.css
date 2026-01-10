@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+/* @import url("//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css");
 @import "assets/css/riliwan-rabo.css";
 @import "assets/css/style.css";
 @import "assets/css/form.css";
-@import "assets/css/loading-bars.css";
+@import "assets/css/loading-bars.css"; */
+
+@tailwind utilities;
+@import "tailwindcss";
+
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-indigo-600 text-white rounded-lg;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 border border-gray-300 rounded-lg;
+  }
+}
